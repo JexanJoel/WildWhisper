@@ -56,6 +56,7 @@
         padding: 2rem;
         max-width: 1100px;
         margin: 0 auto;
+        width: 100%;
     }
     .card {
         background: var(--card-bg);
@@ -66,6 +67,7 @@
         flex-direction: column;
         align-items: center;
         text-align: center;
+        width: 100%;
     }
     .card .icon {
         font-size: 4rem;
@@ -124,14 +126,13 @@
     @media (max-width: 768px) {
         .cards-container {
             grid-template-columns: 1fr;
-            max-width: 500px; /* narrower cards */
+            max-width: 500px;
         }
         header {
             font-size: 1.6rem;
         }
         .card {
             padding: 1.5rem;
-            max-width: 90%;
             margin: 0 auto;
         }
     }
@@ -141,10 +142,17 @@
             font-size: 1.4rem;
             padding: 1.25rem;
         }
+        .cards-container {
+            grid-template-columns: 1fr;
+            gap: 1.5rem;
+            padding: 1rem;
+            max-width: 100%;
+        }
         .card {
             padding: 1.25rem;
-            max-width: 85%;
-            margin: 0 auto;
+            width: 100%;
+            margin: 0;
+            border-radius: 1rem;
         }
         .card .icon {
             font-size: 3rem;
@@ -164,7 +172,7 @@
     <div class="card">
         <div class="icon">🐾</div>
         <h2>Pawtopia</h2>
-        <p>A vibrant community for animal lovers and pet enthusiasts to share stories onsustainable pet care.</p>
+        <p>A vibrant community for animal lovers and pet enthusiasts to share stories on sustainable pet care.</p>
         <a href="https://pawtopia.wuaze.com" class="visit-button">Visit Pawtopia</a>
     </div>
     <div class="card">
