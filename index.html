@@ -12,7 +12,7 @@
     }
     :root {
         --bg-primary: #E6F4EA;
-        --header-footer-color: #8B5E3C;
+        --header-footer-color: #5A3A1E; /* Darker brown */
         --text-primary: #1A202C;
         --text-secondary: #4A5568;
         --card-bg: #CFFFE5;
@@ -120,28 +120,38 @@
         color: white;
         text-decoration: none;
     }
+    /* Tablet view */
     @media (max-width: 768px) {
         .cards-container {
             grid-template-columns: 1fr;
+            max-width: 500px; /* narrower cards */
         }
         header {
             font-size: 1.6rem;
         }
         .card {
-            padding: 1.75rem;
+            padding: 1.5rem;
+            max-width: 90%;
+            margin: 0 auto;
         }
     }
+    /* Mobile view */
     @media (max-width: 480px) {
         header {
             font-size: 1.4rem;
             padding: 1.25rem;
         }
         .card {
-            padding: 1.5rem;
+            padding: 1.25rem;
+            max-width: 85%;
+            margin: 0 auto;
+        }
+        .card .icon {
+            font-size: 3rem;
         }
         .visit-button {
-            padding: 0.65rem 1.5rem;
-            font-size: 1rem;
+            padding: 0.6rem 1.3rem;
+            font-size: 0.95rem;
         }
     }
 </style>
